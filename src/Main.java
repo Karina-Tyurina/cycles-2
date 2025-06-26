@@ -55,34 +55,34 @@ public class Main {
             if (month % 6 == 0) {
                 System.out.println("Месяц " + month + ", сумма накоплений равна " + sum + " рублей");
             }
-            System.out.println();
-            System.out.println("Задача 6 ");
-            sum = amount;
-            month = 0;
-            int months = 12 * 9;
-            while (month < months) {
-                sum = (int) (sum * (1 + percent));
-                month = month + 1;
-                if (month % 6 == 0) {
-                    System.out.println("Месяц " + month + ", сумма накоплений равна " + sum + " рублей");
-                }
-                System.out.println();
-                System.out.println("Задача 7 ");
-                int friday = 6;
-                for (int day = friday; day <= 31; day += 7) {
-                    System.out.println(" Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
-                }
-                System.out.println();
-                System.out.println("Задача 8 ");
-                int startSeeing = 0;
-                int period = 79;
-                int start = currentYear - 200;
-                int end = currentYear + 100;
-                for (int year = start; year < end; year = year + 1) {
-                    if (year % period == startSeeing) {
-                        System.out.println(year);
-                    }
-                }
+        }
+        System.out.println();
+        System.out.println("Задача 6 ");
+        sum = amount;
+        month = 0;
+        int months = 12 * 9;
+        while (month < months) {
+            sum = (int) (sum * (1 + percent));
+            month = month + 1;
+            if (month % 6 == 0) {
+                System.out.println("Месяц " + month + ", сумма накоплений равна " + sum + " рублей");
+            }
+        }
+        System.out.println();
+        System.out.println("Задача 7 ");
+        int friday = 6;
+        for (int day = friday; day <= 31; day += 7) {
+            System.out.println(" Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет");
+        }
+        System.out.println();
+        System.out.println("Задача 8 ");
+        int startSeeing = 0;
+        int period = 79;
+        int start = currentYear - 200;
+        int end = currentYear + 100;
+        for (int year = start; year < end; year = year + 1) {
+            if (year % period == startSeeing) {
+                System.out.println(year);
             }
         }
     }
